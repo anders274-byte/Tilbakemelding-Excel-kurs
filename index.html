@@ -385,8 +385,8 @@ footer {
   </div>
 
   <div class="section">
-    <p class="section-title">Oppsamlingskurs – ønsket nivå</p>
-    <p class="level-intro">Ønsker du å delta på oppsamlingskurs? Velg det nivået som passer deg best.</p>
+    <p class="section-title">Neste runde – ønsket nivå</p>
+    <p class="level-intro">Ønsker du å delta på neste runde? Velg det nivået som passer deg best.</p>
     <div class="level-grid">
       <div class="level-card" onclick="selectLevel(this,'1')">
         <div class="level-badge b1">Nivå 1</div>
@@ -406,7 +406,7 @@ footer {
     </div>
     <div class="check-row">
       <input type="checkbox" id="ingenOppsamling">
-      <span>Jeg trenger ikke oppsamlingskurs</span>
+      <span>Jeg trenger ikke neste runde</span>
     </div>
   </div>
 
@@ -480,7 +480,7 @@ async function submitForm() {
     hva_fungerte_bra: document.getElementById('bra').value,
     hva_kan_forbedres: document.getElementById('forbedre').value,
     forkunnskaper: document.getElementById('forkunnskaper').value,
-    oppsamlingskurs_niva: selectedLevel ? 'Nivå ' + selectedLevel : 'Ikke ønsket',
+    neste_runde_niva: selectedLevel ? 'Nivå ' + selectedLevel : 'Ikke ønsket',
     andre_kommentarer: document.getElementById('kommentar').value
   };
 
